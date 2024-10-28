@@ -7,7 +7,7 @@ function Footer() {
       Built with{" "}
       <FontAwesomeIcon icon={faHeart} className="w-5 text-red-600 mx-1" /> by{" "}
       <a
-        href="https://twitter.com/deepwhitman"
+        href="#"
         target="_blank"
         rel="noreferrer"
         className="text-palette-primary font-bold px-1"
