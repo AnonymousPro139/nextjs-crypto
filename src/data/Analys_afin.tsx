@@ -12,7 +12,7 @@ function Analys_afin() {
   const [analys, setAnalys] = useState(false);
   const [color, setColor] = useState("is-primary");
   const [error, setError] = useState("");
-  const [text, setText] = useState("afin cipher working");
+  const [text, setText] = useState("Afin cipher working");
   const [keyA, setkeyA] = useState<number>(3);
   const [keyB, setkeyB] = useState<number>(1);
   const [data, setData] = useState("");
