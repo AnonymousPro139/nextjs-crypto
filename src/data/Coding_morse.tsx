@@ -1,11 +1,10 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import base64js from "base64-js";
 import Dropdown from "@/components/Dropdown";
 import Intro from "@/components/Intro";
-import logo from "../../public/img/morse2.png";
-import table from "../../public/img/morse table.jpg";
+const logo = "/img/morse2.png";
+const table = "/img/morse table.jpg";
 const morse = require("morsee");
 
 function Coding_morse() {
@@ -102,6 +101,7 @@ function Coding_morse() {
           <Image
             src={logo}
             height={130}
+            width={130}
             alt="photo"
             priority={true}
             style={{ width: "auto" }}
@@ -170,6 +170,7 @@ function Coding_morse() {
               <Image
                 src={table}
                 height={800}
+                width={800}
                 alt="photo"
                 priority={true}
                 style={{ width: "auto" }}
@@ -192,7 +193,7 @@ function Coding_morse() {
                       color: "green",
                       fontSize: 18,
                     }}
-                    href="https://www.cryptool.org/_ctoApps/morsecode/morse/english/1.mp3"
+                    href="https://legacy.cryptool.org/_ctoApps/morsecode/morse/english/1.mp3"
                   >
                     Радио дохио 1 сонсох
                   </a>
@@ -206,7 +207,7 @@ function Coding_morse() {
                       color: "green",
                       fontSize: 18,
                     }}
-                    href="https://www.cryptool.org/_ctoApps/morsecode/morse/english/2.mp3"
+                    href="https://legacy.cryptool.org/_ctoApps/morsecode/morse/english/2.mp3"
                   >
                     Радио дохио 2 сонсох
                   </a>
@@ -221,7 +222,7 @@ function Coding_morse() {
                       color: "green",
                       fontSize: 18,
                     }}
-                    href="https://www.cryptool.org/_ctoApps/morsecode/morse/english/3.mp3"
+                    href="https://legacy.cryptool.org/_ctoApps/morsecode/morse/english/3.mp3"
                   >
                     Радио дохио 3 сонсох
                   </a>

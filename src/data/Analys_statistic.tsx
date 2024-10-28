@@ -11,11 +11,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import logo from "../../public/img/frequency.png";
 import Image from "next/image";
 import Dropdown from "@/components/Dropdown";
 import StatisticLanguage from "@/components/StatisticLanguage";
 
+const logo = "/img/frequency.png";
 
 function Analys_statistic() {
   const [text, setText] =
@@ -179,7 +179,7 @@ function Analys_statistic() {
   ];
   const counter = () => {
     let count = 0;
-    var Arr:number[]= [];
+    var Arr: number[] = [];
 
     for (var i = 0; i < letter.length; i++) {
       for (let j = 0; j < text.length; j++) {
@@ -258,7 +258,7 @@ function Analys_statistic() {
         <div className="column is-one-third">
           <Image
             src={logo}
-            // width={130}
+            width={130}
             height={130}
             alt="photo"
             priority={true}
@@ -367,13 +367,13 @@ function Analys_statistic() {
             >
               Тооцоолох!
             </button>
-            
           </div>
 
           {data.length != 0 && (
             <div style={{ marginTop: 20, marginBottom: 20 }}>
               <div className="notification is-danger" style={{ margin: 15 }}>
-                График дараах байдалтай байна.  (жижиг болон том үсгүүд нь ялгаатай дүрслэгдэнэ).
+                График дараах байдалтай байна. (жижиг болон том үсгүүд нь
+                ялгаатай дүрслэгдэнэ).
               </div>
 
               <ResponsiveContainer width="100%" height={400}>

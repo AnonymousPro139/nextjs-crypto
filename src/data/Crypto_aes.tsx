@@ -6,12 +6,12 @@ import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
 const aesjs = require("aes-js");
 
-import logo from "../../public/img/aes.png";
-import img1 from "../../public/img/aes1.png";
-import img2 from "../../public/img/aes2.png";
-import img3 from "../../public/img/aes3.png";
-import img4 from "../../public/img/aes4.png";
-import img5 from "../../public/img/aes5.png";
+const logo = "/img/aes.png";
+const img1 = "/img/aes1.png";
+const img2 = "/img/aes2.png";
+const img3 = "/img/aes3.png";
+const img4 = "/img/aes4.png";
+const img5 = "/img/aes5.png";
 
 function Crypto_aes() {
   const [show, setShow] = useState(true);
@@ -35,19 +35,19 @@ function Crypto_aes() {
       setShow(false);
       setDec(false);
       setEnc(true);
-      setError("")
+      setError("");
     } else {
       if (endpoint == "dec") {
         setShow(false);
         setEnc(false);
         setDec(true);
-        setText("")
-        setError("")
+        setText("");
+        setError("");
       } else {
         setDec(false);
         setEnc(false);
         setShow(true);
-        setError("")
+        setError("");
       }
     }
   };
@@ -59,6 +59,7 @@ function Crypto_aes() {
           <Image
             src={logo}
             height={130}
+            width={130}
             alt="photo"
             priority={true}
             style={{ width: "auto", borderRadius: 10 }}
@@ -155,6 +156,7 @@ function Crypto_aes() {
                 <Image
                   src={img1}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -200,6 +202,7 @@ function Crypto_aes() {
                 <Image
                   src={img2}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -246,6 +249,7 @@ function Crypto_aes() {
                 <Image
                   src={img3}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -268,6 +272,7 @@ function Crypto_aes() {
                 <Image
                   src={img4}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -314,6 +319,7 @@ function Crypto_aes() {
                 <Image
                   src={img5}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}

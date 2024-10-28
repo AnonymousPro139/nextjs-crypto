@@ -1,11 +1,11 @@
 "use client";
 import React, { useState } from "react";
-
-import logo from "../../public/img/rsa.svg";
-import Intro from "@/components/Intro";
 import Image from "next/image";
+import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
 import CategoryTitle from "@/components/CategoryTitle";
+
+const logo = "/img/rsa.svg";
 
 function Analys_rsa() {
   const [analys, setAnalys] = useState(false);
@@ -232,15 +232,12 @@ function Analys_rsa() {
 
   return (
     <div className="container">
-      <Intro
-        title="Криптоанализ!"
-        description="Power of Prime Numbers"
-      />
+      <Intro title="Криптоанализ!" description="Power of Prime Numbers" />
       <div className="columns" style={{ margin: 10 }}>
         <div className="column is-one-third">
           <Image
             src={logo}
-            // width={130}
+            width={130}
             height={130}
             alt="photo"
             priority={true}

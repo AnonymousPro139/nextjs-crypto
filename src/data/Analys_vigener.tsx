@@ -11,10 +11,11 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import logo from "../../public/img/vigenere.png";
-import photo from "../../public/img/vig.png";
 import Dropdown from "@/components/Dropdown";
 import CategoryTitle from "@/components/CategoryTitle";
+
+const logo = "/img/vigenere.png";
+const photo = "/img/vig.png";
 
 function Analys_vigener() {
   const [text, setText] =
@@ -221,26 +222,26 @@ Exporting Countries (OPEC) were analyzed using text-minin techniques.`);
 
     for (let j = 0; j < analyzData.length - (lengthGramm - 1); j++) {
       // if (typeof analyzData == "string") {
-        // nemsen
-        bigramm = analyzData.substring(j, j + lengthGramm);
+      // nemsen
+      bigramm = analyzData.substring(j, j + lengthGramm);
 
-        if (!bigrammArr.includes(bigramm)) {
-          bigrammArr.push(bigramm);
+      if (!bigrammArr.includes(bigramm)) {
+        bigrammArr.push(bigramm);
 
-          for (
-            let i = j + (lengthGramm - 1);
-            i < analyzData.length - (lengthGramm - 1);
-            i++
-          ) {
-            str = analyzData.substring(i, i + lengthGramm);
+        for (
+          let i = j + (lengthGramm - 1);
+          i < analyzData.length - (lengthGramm - 1);
+          i++
+        ) {
+          str = analyzData.substring(i, i + lengthGramm);
 
-            if (bigramm === str) {
-              counter = counter + 1;
-            }
+          if (bigramm === str) {
+            counter = counter + 1;
           }
+        }
 
-          Arr.push(counter);
-          counter = 1;
+        Arr.push(counter);
+        counter = 1;
         // }
       }
     }
@@ -350,15 +351,12 @@ Exporting Countries (OPEC) were analyzed using text-minin techniques.`);
   };
   return (
     <div className="container">
-      <Intro
-        title="Криптоанализ!"
-        description="Vigenere cipher"
-      />
+      <Intro title="Криптоанализ!" description="Vigenere cipher" />
       <div className="columns" style={{ margin: 10 }}>
         <div className="column is-one-third">
           <Image
             src={logo}
-            // width={130}
+            width={130}
             height={130}
             alt="photo"
             priority={true}
@@ -403,7 +401,7 @@ Exporting Countries (OPEC) were analyzed using text-minin techniques.`);
         <div className=" column">
           <Image
             src={photo}
-            // width={130}
+            width={130}
             height={430}
             alt="photo"
             priority={true}
@@ -576,7 +574,7 @@ Exporting Countries (OPEC) were analyzed using text-minin techniques.`);
                   )}
                 </span>
                 <textarea
-                id="txt5"
+                  id="txt5"
                   className="textarea"
                   rows={5}
                   defaultValue={encryptedData}

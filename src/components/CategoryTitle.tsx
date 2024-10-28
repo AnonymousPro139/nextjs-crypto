@@ -19,14 +19,9 @@ export default function CategoryTitle({
         marginBottom: 20,
         marginLeft: 10,
         fontSize: fontSize ? fontSize : 15,
-        // flex: 1,
         flexDirection: "column",
         fontWeight: "bolder",
-        // alignItems: "center",
-        // justifyContent: "center",
         justifyContent: "flex-end",
-        // alignSelf: "center",
-        // backgroundColor: "orange",
       }}
     >
       {title}

@@ -3,10 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import ReactPlayer from "react-player";
 const enigmajs = require("enigma");
-import logo from "../../public/img/enigma.png";
-import machine2 from "../../public/img/enigma3.jpg";
-
 import Intro from "@/components/Intro";
+
+const logo = "/img/enigma.png";
+const machine2 = "/img/enigma3.jpg";
 
 function Crypto_enigma() {
   const [text, setText] = useState(`Germany technology is black hole`);
@@ -77,7 +77,7 @@ function Crypto_enigma() {
             <Image
               src={machine2}
               height={400}
-              // width={400}
+              width={400}
               alt="photo"
               priority={true}
               style={{ borderRadius: 10 }}

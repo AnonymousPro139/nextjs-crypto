@@ -3,10 +3,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
-import logo from "../../public/img/feal4.png";
-import img1 from "../../public/img/feal1.png";
-import img2 from "../../public/img/feal2.png";
-import img3 from "../../public/img/feal3.png";
 import {
   encrypt,
   decrypt,
@@ -14,6 +10,11 @@ import {
   generateSubkeys,
   byteArrayToStr,
 } from "../utils/feal4";
+
+const logo = "/img/feal4.png";
+const img1 = "/img/feal1.png";
+const img2 = "/img/feal2.png";
+const img3 = "/img/feal3.png";
 
 function Crypto_feal4() {
   const [show, setShow] = useState(true);
@@ -27,15 +28,14 @@ function Crypto_feal4() {
 
   useEffect(() => {
     var keys: Uint32Array = generateSubkeys();
-    var showHex = ""
+    var showHex = "";
     for (let i = 0; i < keys.length; i++) {
-        showHex = showHex + keys[i].toString(16) + ", "; 
-      }
+      showHex = showHex + keys[i].toString(16) + ", ";
+    }
 
     setArrayKey(keys);
     setKey(showHex);
-
-}, []);
+  }, []);
 
   const dropdownClick = (endpoint: any) => {
     if (endpoint == "enc") {
@@ -63,16 +63,14 @@ function Crypto_feal4() {
 
   return (
     <div className="container">
-      <Intro
-        title="Криптограф!"
-        description="Fast Data Encryption Algorithm"
-      />
+      <Intro title="Криптограф!" description="Fast Data Encryption Algorithm" />
 
       <div className="columns" style={{ margin: 10 }}>
         <div className="column is-one-third">
           <Image
             src={logo}
             height={130}
+            width={130}
             alt="photo"
             priority={true}
             style={{ width: "auto", borderRadius: 10 }}
@@ -155,7 +153,7 @@ function Crypto_feal4() {
                 <Image
                   src={img1}
                   height={400}
-                  // width={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ borderRadius: 10 }}
@@ -176,7 +174,7 @@ function Crypto_feal4() {
                 <Image
                   src={img3}
                   height={400}
-                  // width={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ borderRadius: 10 }}
@@ -196,7 +194,7 @@ function Crypto_feal4() {
                 <Image
                   src={img2}
                   height={400}
-                  // width={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ borderRadius: 10 }}
@@ -283,9 +281,7 @@ function Crypto_feal4() {
                     t[i] = parseInt(a[i]);
                   }
 
-                  setConvertedTxt(
-                    byteArrayToStr(decrypt(t, arrayKey))
-                  );
+                  setConvertedTxt(byteArrayToStr(decrypt(t, arrayKey)));
                 } else {
                   alert("Утга оруулна уу");
                 }

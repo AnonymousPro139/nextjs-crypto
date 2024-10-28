@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
+import Image from "next/image";
 const forge = require("node-forge");
 import ReactPlayer from "react-player";
-import Image from "next/image";
-import logo from "../../public/img/des.png";
-import img1 from "../../public/img/des1.png";
-import img2 from "../../public/img/des2.png";
-import img3 from "../../public/img/des3.png";
-import img4 from "../../public/img/des4.png";
+
+const logo = "/img/des.png";
+const img1 = "/img/des1.png";
+const img2 = "/img/des2.png";
+const img3 = "/img/des3.png";
+const img4 = "/img/des4.png";
 
 import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
@@ -54,6 +55,7 @@ function Crypto_des() {
           <Image
             src={logo}
             height={135}
+            width={135}
             alt="photo"
             priority={true}
             style={{ width: "auto", borderRadius: 20 }}
@@ -137,6 +139,7 @@ function Crypto_des() {
               <Image
                 src={img1}
                 height={400}
+                width={400}
                 alt="photo"
                 priority={true}
                 style={{ width: "auto" }}
@@ -157,6 +160,7 @@ function Crypto_des() {
               <Image
                 src={img2}
                 height={400}
+                width={400}
                 alt="photo"
                 priority={true}
                 style={{ width: "auto" }}
@@ -179,6 +183,7 @@ function Crypto_des() {
               <Image
                 src={img4}
                 height={400}
+                width={400}
                 alt="photo"
                 priority={true}
                 style={{ width: "auto" }}
@@ -188,6 +193,7 @@ function Crypto_des() {
               <Image
                 src={img3}
                 height={400}
+                width={400}
                 alt="photo"
                 priority={true}
                 style={{ width: "auto" }}

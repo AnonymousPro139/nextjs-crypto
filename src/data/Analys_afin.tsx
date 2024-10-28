@@ -4,8 +4,9 @@ import Image from "next/image";
 import CategoryTitle from "@/components/CategoryTitle";
 import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
-import logo from "../../public/img/afin.jpg";
-import photo from "../../public/img/affin-cipher.png";
+
+const logo = "/img/afin.jpg";
+const photo = "/img/affin-cipher.png";
 
 function Analys_afin() {
   const [analys, setAnalys] = useState(false);
@@ -271,7 +272,7 @@ function Analys_afin() {
   };
 
   const InvLinearFunc = (a: number, b: number, plainArr: number[]) => {
-    var cipArr: number[]= [];
+    var cipArr: number[] = [];
     for (let i = 0; i < plainArr.length; i++) {
       cipArr[i] = (Number(a) * (Number(plainArr[i]) - Number(b))) % 26;
 
@@ -303,7 +304,7 @@ function Analys_afin() {
   };
 
   const findElementInv = () => {
-    var Arr: number[]= [];
+    var Arr: number[] = [];
     Arr.push(1);
     for (let i = 1; i < 26; i++) {
       for (let j = i + 1; j < 26; j++) {
@@ -342,7 +343,7 @@ function Analys_afin() {
 
   return (
     <div className="container">
-       <Intro
+      <Intro
         title="Криптоанализ!"
         description="Бүх шинжлэх ухааны хаан нь МАТЕМАТИК юм."
       />
@@ -352,6 +353,7 @@ function Analys_afin() {
           <Image
             src={logo}
             height={430}
+            width={430}
             alt="photo"
             priority={true}
             style={{ width: "auto" }}
@@ -485,7 +487,7 @@ function Analys_afin() {
         ) : (
           <div>
             <div>
-            <CategoryTitle title={"Санамж"} color="green" fontSize={15} />
+              <CategoryTitle title={"Санамж"} color="green" fontSize={15} />
               <div className="columns notification is-warning">
                 1. a түлхүүр нь дараах утгуудаас байх боломжтой [
                 {findElementInv().map((el, key) => (
@@ -494,7 +496,7 @@ function Analys_afin() {
                 ]
               </div>
               <div className="columns notification is-warning">
-               2. Жижиг үсгүүд ашиглан текст оруулна
+                2. Жижиг үсгүүд ашиглан текст оруулна
               </div>
               <CategoryTitle title={"Туршилт хийх"} color="red" fontSize={15} />
 

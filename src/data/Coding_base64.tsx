@@ -4,8 +4,8 @@ import Image from "next/image";
 import base64js from "base64-js";
 import Dropdown from "@/components/Dropdown";
 import Intro from "@/components/Intro";
-import logo from "../../public/img/base64.png";
-import table from "../../public/img/base64_table.png";
+const logo = "/img/base64.png";
+const table = "/img/base64_table.png";
 
 function Coding_base64() {
   const [text, setText] =
@@ -59,9 +59,10 @@ function Coding_base64() {
           <Image
             src={logo}
             height={130}
+            width={130}
             alt="photo"
             priority={true}
-            style={{ width: "auto", borderRadius: 10  }}
+            style={{ width: "auto", borderRadius: 10 }}
           />
         </div>
 
@@ -131,6 +132,7 @@ function Coding_base64() {
             <Image
               src={table}
               height={840}
+              width={840}
               alt="photo"
               priority={true}
               style={{ width: "auto" }}

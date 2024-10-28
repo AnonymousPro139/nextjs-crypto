@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from "react";
-
-import logo from "../../public/img/caeser.jpg";
-import photo from "../../public/img/photo_caeser.png";
-import Intro from "@/components/Intro";
 import Image from "next/image";
+import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
 import CategoryTitle from "@/components/CategoryTitle";
-// import { stringToAsciiCodeArray } from "@/utils/function";
+
+const logo = "/img/caeser.jpg";
+const photo = "/img/photo_caeser.png";
 
 function Analys_caeser() {
   const [data, setData] = useState("");
@@ -156,15 +155,13 @@ function Analys_caeser() {
 
   return (
     <div className="container">
-      <Intro
-        title="Криптоанализ!"
-        description="Julius Caeser"
-      />
+      <Intro title="Криптоанализ!" description="Julius Caeser" />
       <div className="columns" style={{ margin: 10 }}>
         <div className="column is-one-third">
           <Image
             src={logo}
             height={130}
+            width={130}
             alt="photo"
             priority={false}
             style={{ width: "auto" }}
@@ -215,6 +212,7 @@ function Analys_caeser() {
           <Image
             src={photo}
             height={430}
+            width={430}
             alt="photo"
             priority={true}
             style={{ width: "auto" }}

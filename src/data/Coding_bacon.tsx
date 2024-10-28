@@ -1,8 +1,8 @@
 import React from "react";
 import Intro from "@/components/Intro";
 import Image from "next/image";
-import logo from "../../public/img/bacon.png";
-import table from "../../public/img/bacon_table.png";
+const logo = "/img/bacon.png";
+const table = "/img/bacon_table.png";
 
 function Coding_bacon() {
   return (
@@ -17,6 +17,7 @@ function Coding_bacon() {
           <Image
             src={logo}
             height={130}
+            width={130}
             alt="photo"
             priority={true}
             style={{ width: "auto" }}
@@ -59,6 +60,7 @@ function Coding_bacon() {
           <Image
             src={table}
             height={400}
+            width={400}
             alt="photo"
             priority={true}
             style={{ width: "auto" }}

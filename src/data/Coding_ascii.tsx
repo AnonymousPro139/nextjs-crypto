@@ -3,9 +3,10 @@ import React, { useState } from "react";
 import Image from "next/image";
 import Dropdown from "@/components/Dropdown";
 import Intro from "@/components/Intro";
-import logo from "../../public/img/ascii.png";
-import ascii_table from "../../public/img/ascii_table.png";
 const str2bin = require("str2bin");
+
+const logo = "/img/ascii.png";
+const ascii_table = "/img/ascii_table.png";
 
 function Coding_ascii() {
   const [text, setText] =
@@ -60,7 +61,7 @@ the associated problems, and the related and relevant references.`);
         <div className="column is-one-third">
           <Image
             src={logo}
-            // width={130}
+            width={130}
             height={130}
             alt="photo"
             priority={true}
@@ -111,7 +112,9 @@ the associated problems, and the related and relevant references.`);
       {code == true && (
         <div>
           {/* <CategoryTitle title={"Туршилт хийх"} /> */}
-          <div className="notification is-success">{"Ascii кодлох туршилт"}</div>
+          <div className="notification is-success">
+            {"Ascii кодлох туршилт"}
+          </div>
           {text.length !== 0 && (
             <div
               style={{
@@ -241,6 +244,7 @@ the associated problems, and the related and relevant references.`);
           <Image
             src={ascii_table}
             height={840}
+            width={"840"}
             alt="photo"
             priority={true}
             style={{ margin: 2, width: "auto" }}

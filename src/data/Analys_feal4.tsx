@@ -1,9 +1,9 @@
 "use client";
 import React from "react";
-import Intro from "@/components/Intro";
 import Image from "next/image";
+import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";
-import logo from "../../public/img/differential_analys.png";
+const logo = "/img/differential_analys.png";
 
 function Analys_feal4() {
   const setHandler = (e: any) => {};
@@ -16,7 +16,7 @@ function Analys_feal4() {
         <div className="column is-one-third">
           <Image
             src={logo}
-            // width={130}
+            width={130}
             height={130}
             alt="photo"
             priority={true}
@@ -55,7 +55,12 @@ function Analys_feal4() {
         </div>
       </div>
 
-      <div className="text-center mb-16" style={{color: "#485FC7", fontWeight: "bold"}}>Тун удахгүй...</div>
+      <div
+        className="text-center mb-16"
+        style={{ color: "#485FC7", fontWeight: "bold" }}
+      >
+        Тун удахгүй...
+      </div>
     </div>
   );
 }

@@ -4,10 +4,11 @@ import Intro from "@/components/Intro";
 import Image from "next/image";
 import logo from "../../public/img/adfgvx.png";
 import Dropdown from "@/components/Dropdown";
-import img1 from "../../public/img/adfgvx1.png";
-import img2 from "../../public/img/adfgvx2.png";
-import img3 from "../../public/img/adfgvx3.png";
-import img4 from "../../public/img/adfgvx4.png";
+
+const img1 = "/img/adfgvx1.png";
+const img2 = "/img/adfgvx2.png";
+const img3 = "/img/adfgvx3.png";
+const img4 = "/img/adfgvx4.png";
 
 function Crypto_adfgvx() {
   const [show, setShow] = useState(true);
@@ -358,7 +359,10 @@ function Crypto_adfgvx() {
       {show == true && (
         <>
           <div className="mt-2">
-            <div className="text-center" style={{ color: "green", fontWeight: "bold" }}>
+            <div
+              className="text-center"
+              style={{ color: "green", fontWeight: "bold" }}
+            >
               Тайлбар
             </div>
 
@@ -389,6 +393,7 @@ function Crypto_adfgvx() {
                 <Image
                   src={img1}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -409,6 +414,7 @@ function Crypto_adfgvx() {
                 <Image
                   src={img2}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -430,6 +436,7 @@ function Crypto_adfgvx() {
                 <Image
                   src={img3}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
@@ -452,6 +459,7 @@ function Crypto_adfgvx() {
                 <Image
                   src={img4}
                   height={400}
+                  width={400}
                   alt="photo"
                   priority={true}
                   style={{ width: "auto", borderRadius: 10 }}
