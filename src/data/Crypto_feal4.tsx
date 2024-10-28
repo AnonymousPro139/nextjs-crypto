@@ -12,9 +12,9 @@ import {
 } from "../utils/feal4";
 
 const logo = "/img/feal4.png";
-const img1 = "/img/feal1.png";
-const img2 = "/img/feal2.png";
-const img3 = "/img/feal3.png";
+const img1 = "/img/feal1.PNG";
+const img2 = "/img/feal2.PNG";
+const img3 = "/img/feal3.PNG";
 
 function Crypto_feal4() {
   const [show, setShow] = useState(true);

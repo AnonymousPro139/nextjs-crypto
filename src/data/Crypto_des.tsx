@@ -5,10 +5,10 @@ const forge = require("node-forge");
 import ReactPlayer from "react-player";
 
 const logo = "/img/des.png";
-const img1 = "/img/des1.png";
-const img2 = "/img/des2.png";
-const img3 = "/img/des3.png";
-const img4 = "/img/des4.png";
+const img1 = "/img/des1.PNG";
+const img2 = "/img/des2.PNG";
+const img3 = "/img/des3.PNG";
+const img4 = "/img/des4.PNG";
 
 import Intro from "@/components/Intro";
 import Dropdown from "@/components/Dropdown";

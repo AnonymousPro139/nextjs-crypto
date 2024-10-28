@@ -7,11 +7,11 @@ import Dropdown from "@/components/Dropdown";
 const aesjs = require("aes-js");
 
 const logo = "/img/aes.png";
-const img1 = "/img/aes1.png";
-const img2 = "/img/aes2.png";
-const img3 = "/img/aes3.png";
-const img4 = "/img/aes4.png";
-const img5 = "/img/aes5.png";
+const img1 = "/img/aes1.PNG";
+const img2 = "/img/aes2.PNG";
+const img3 = "/img/aes3.PNG";
+const img4 = "/img/aes4.PNG";
+const img5 = "/img/aes5.PNG";
 
 function Crypto_aes() {
   const [show, setShow] = useState(true);
