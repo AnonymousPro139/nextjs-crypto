@@ -3,7 +3,6 @@ import { notFound } from "next/navigation";
 import dynamic from "next/dynamic";
 import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
-import Intro from "@/components/Intro";
 import { metaData } from "@/data/meta_data";
 import { checkFile, getFileNames } from "@/utils/function";
 
@@ -18,7 +17,7 @@ export async function generateMetadata({
 }: {
   params: { id: string };
 }) {
-  return metaData(id)
+  return metaData(id);
 }
 
 export async function generateStaticParams() {
@@ -36,7 +35,9 @@ const Page: FunctionComponent<PageProps> = async ({ params: { id } }) => {
     notFound();
   }
 
-  const DynamicPage = dynamic(() => import(`../../../data/${path}`),  {ssr: false});
+  const DynamicPage = dynamic(() => import(`../../../data/${path}`), {
+    ssr: false,
+  });
   // {
   //   loading: () => <p>Loading...</p>,
   // },
