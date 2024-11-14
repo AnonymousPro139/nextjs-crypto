@@ -2,9 +2,10 @@
 import React from "react";
 import Image from "next/image";
 import Intro from "@/components/Intro";
-const img = "/img/intermed1.png";
-const img2 = "/img/intermed2.png";
-const img3 = "/img/intermed3.png";
+const img = "/img/intermed1.PNG";
+const img2 = "/img/intermed2.PNG";
+const img3 = "/img/intermed3.PNG";
+
 function News_Quotes() {
   return (
     <div className="container">
