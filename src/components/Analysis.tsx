@@ -62,7 +62,7 @@ export default function Analysis(): JSX.Element {
         <div className="mx-auto max-w-6xl">
           <Intro
             title="Криптоанализ!"
-            description="Бүх шинжлэх ухааны хаан нь МАТЕМАТИК юм."
+            description="'Security is a process, not a product' - Bruce Schneier"
           />
           <Listings Items={Items} />
         </div>
