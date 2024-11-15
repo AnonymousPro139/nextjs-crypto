@@ -12,6 +12,7 @@ export default function News(): JSX.Element {
       title: "Wonderful Cryptography Quotes",
       description: "Криптографын тухай сонирхолтой ишлэлүүд",
     },
+
     {
       move: "News_IntermedData",
       imgSrc: "/img/intermed.jpg",
@@ -19,6 +20,15 @@ export default function News(): JSX.Element {
       title: "Интермед эмнэлэгийн дата?",
       description:
         "Цахим аюулгүй байдлын менежмент, заналхийллийн эсрэг үйл ажиллагаа явуулдаг 'HackManac'-ийн мэдээлснээр, аравдугаар сарын 30-ны өдөр тус эмнэлгийн цахим дата руу халдсан гэгдээд байгаа",
+    },
+
+    {
+      move: "News_PostQuantum",
+      imgSrc: "/img/news/quantum.png",
+      imgAlt: "postquantum",
+      title: "Квантын дараах криптограф",
+      description:
+        "Квантын компьютерууд хөгжихийн хэрээр криптографын ландшафт үндсэн өөрчлөлттэй тулгарч байна. RSA болон ECC (Elliptic Curve Cryptography) зэрэг математик хүндрэлүүд болох том тооны факторизаци /үржигдэхүүнд задлах/ хийх, дискрет логарифмын хүндрэлд суурилсан байдаг",
     },
   ];
 

@@ -6,7 +6,7 @@ const img = "/img/intermed1.PNG";
 const img2 = "/img/intermed2.PNG";
 const img3 = "/img/intermed3.PNG";
 
-function News_Quotes() {
+function News() {
   return (
     <div className="container">
       <Intro
@@ -50,7 +50,11 @@ function News_Quotes() {
             <div className="mt-2">
               Одоогийн байдлаар тус бүлгэм 50'000 доллараар зөвхөн 1 хүнд зарна
               гэж мэдээлэл тавьсан байгаа бөгөөд 11 сарын 07-ны өдөр{" "}
-              <a href="https://www.anonfile.la/file/ZV8UKl7Dj" target="_blank">
+              <a
+                style={{ color: "blue" }}
+                href="https://www.anonfile.la/file/ZV8UKl7Dj"
+                target="_blank"
+              >
                 https://www.anonfile.la/file/ZV8UKl7Dj
               </a>{" "}
               сайтад 60'000 мөр бүхий дата ил цацсан байна.
@@ -97,4 +101,4 @@ function News_Quotes() {
   );
 }
 
-export default News_Quotes;
+export default News;
