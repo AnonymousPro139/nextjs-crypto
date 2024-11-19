@@ -6,13 +6,13 @@ import Nav from "./Nav";
 export default function News(): JSX.Element {
   const Items: any = [
     {
-      move: "News_Quotes",
-      imgSrc: "/img/news_quotes.jpg",
-      imgAlt: "quotes",
-      title: "Wonderful Cryptography Quotes",
-      description: "Криптографын тухай сонирхолтой ишлэлүүд",
+      move: "News_E2ee",
+      imgSrc: "/img/news/e2ee1.gif",
+      imgAlt: "end-to-end encryption",
+      title: "End-to-end шифрлэлт",
+      description:
+        "End-to-end шифрлэлтийн хэрэглээ хэдийнээ бидний амьдралын салшгүй нэг хэсэг болсон байгаа билээ. Судалгаанаас харахад Монгол улсын 13 ба түүнээс дээш насны иргэдийн 80-аас дээш хувь нь Facebook Messenger-ийг хэрэглэж байна гэсэн тоо баримт харагдаж байна",
     },
-
     {
       move: "News_IntermedData",
       imgSrc: "/img/intermed.jpg",
@@ -21,7 +21,14 @@ export default function News(): JSX.Element {
       description:
         "Цахим аюулгүй байдлын менежмент, заналхийллийн эсрэг үйл ажиллагаа явуулдаг 'HackManac'-ийн мэдээлснээр, аравдугаар сарын 30-ны өдөр тус эмнэлгийн цахим дата руу халдсан гэгдээд байгаа",
     },
-
+    {
+      move: "News_IntroCipher",
+      imgSrc: "/img/news/intro_cipher.png",
+      imgAlt: "cipher",
+      title: "Шифрлэлтийн үндсэн ойлголтууд",
+      description:
+        "Шифрлэлт болон кодчилолын тусламжтайгаар өгөгдөл нууцлах, хамгаалах шинжлэх ухааныг криптограф нэрлэдэг.",
+    },
     {
       move: "News_PostQuantum",
       imgSrc: "/img/news/quantum.png",
@@ -39,12 +46,11 @@ export default function News(): JSX.Element {
         "Латтисд суурилсан криптографыг криптографын ирээдүйтэй салбар гэж үзэж буй тул онолын болон практикийн илүү их судалгаа, шинжилгээ, сайжруулалтуудыг дэлхийн өнцөг булан бүрт эрдэмтэн, судлаачид хийсээр байна",
     },
     {
-      move: "News_IntroCipher",
-      imgSrc: "/img/news/intro_cipher.png",
-      imgAlt: "cipher",
-      title: "Шифрлэлтийн үндсэн ойлголтууд",
-      description:
-        "Шифрлэлт болон кодчилолын тусламжтайгаар өгөгдөл нууцлах, хамгаалах шинжлэх ухааныг криптограф нэрлэдэг.",
+      move: "News_Quotes",
+      imgSrc: "/img/news_quotes.jpg",
+      imgAlt: "quotes",
+      title: "Wonderful Cryptography Quotes",
+      description: "Криптографын тухай сонирхолтой ишлэлүүд",
     },
   ];
 
