@@ -47,7 +47,7 @@ export default function News(): JSX.Element {
     },
     {
       move: "News_IntroPubSys",
-      imgSrc: "/img/news/pubkeysys.png",
+      imgSrc: "/img/news/pubkeysys1.png",
       imgAlt: "pubkey",
       title: "Нийтийн түлхүүрт криптограф",
       description:
