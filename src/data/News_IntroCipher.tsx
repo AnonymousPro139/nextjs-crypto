@@ -3,7 +3,6 @@ import React from "react";
 import Image from "next/image";
 import Intro from "@/components/Intro";
 const img = "/img/news/intro_cipher.png";
-const img2 = "/img/news/lattice2.png";
 
 function News() {
   return (

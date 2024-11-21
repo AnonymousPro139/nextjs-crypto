@@ -46,6 +46,14 @@ export default function News(): JSX.Element {
         "Латтисд суурилсан криптографыг криптографын ирээдүйтэй салбар гэж үзэж буй тул онолын болон практикийн илүү их судалгаа, шинжилгээ, сайжруулалтуудыг дэлхийн өнцөг булан бүрт эрдэмтэн, судлаачид хийсээр байна",
     },
     {
+      move: "News_IntroPubSys",
+      imgSrc: "/img/news/pubkeysys.png",
+      imgAlt: "pubkey",
+      title: "Нийтийн түлхүүрт криптограф",
+      description:
+        "Нийтийн түлхүүрт криптограф (Public key cryptography) буюу асимметр криптограф нь орчин үеийн нууцлал, аюулгүй байдлын үндсэн ойлголт юм. ",
+    },
+    {
       move: "News_Quotes",
       imgSrc: "/img/news_quotes.jpg",
       imgAlt: "quotes",
