@@ -54,6 +54,14 @@ export default function News(): JSX.Element {
         "Нийтийн түлхүүрт криптограф (Public key cryptography) буюу асимметр криптограф нь орчин үеийн нууцлал, аюулгүй байдлын үндсэн ойлголт юм. ",
     },
     {
+      move: "News_PubKeyExperience",
+      imgSrc: "/img/news/pubkeysys4.gif",
+      imgAlt: "publickey_system",
+      title: "Нийтийн түлхүүрт криптографын хүндрэл, туршлага, ирээдүй",
+      description:
+        "Хэрэгжүүлэхэд тулгарч буй хүндрэл, ашиглах сайн тал болон ирээдүйн талаар",
+    },
+    {
       move: "News_Quotes",
       imgSrc: "/img/news_quotes.jpg",
       imgAlt: "quotes",
