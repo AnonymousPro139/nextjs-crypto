@@ -22,13 +22,14 @@ export default function News(): JSX.Element {
         "Цахим аюулгүй байдлын менежмент, заналхийллийн эсрэг үйл ажиллагаа явуулдаг 'HackManac'-ийн мэдээлснээр, аравдугаар сарын 30-ны өдөр тус эмнэлгийн цахим дата руу халдсан гэгдээд байгаа",
     },
     {
-      move: "News_IntroCipher",
-      imgSrc: "/img/news/intro_cipher.png",
-      imgAlt: "cipher",
-      title: "Шифрлэлтийн үндсэн ойлголтууд",
+      move: "News_SSL",
+      imgSrc: "/img/news/ssl.png",
+      imgAlt: "ssl",
+      title: "SSL протокол гэж юу вэ?",
       description:
-        "Шифрлэлт болон кодчилолын тусламжтайгаар өгөгдөл нууцлах, хамгаалах шинжлэх ухааныг криптограф нэрлэдэг.",
+        "SSL протокол болоод хэрхэн ажилладаг талаар товч мэдээлэл аваарай.",
     },
+
     {
       move: "News_PostQuantum",
       imgSrc: "/img/news/quantum.png",
@@ -36,6 +37,14 @@ export default function News(): JSX.Element {
       title: "Квантын дараах криптограф",
       description:
         "Квантын компьютерууд хөгжихийн хэрээр криптографын ландшафт үндсэн өөрчлөлттэй тулгарч байна. RSA болон ECC (Elliptic Curve Cryptography) зэрэг математик хүндрэлүүд болох том тооны факторизаци /үржигдэхүүнд задлах/ хийх, дискрет логарифмын хүндрэлд суурилсан байдаг",
+    },
+    {
+      move: "News_IntroCipher",
+      imgSrc: "/img/news/intro_cipher.png",
+      imgAlt: "cipher",
+      title: "Шифрлэлтийн үндсэн ойлголтууд",
+      description:
+        "Шифрлэлт болон кодчилолын тусламжтайгаар өгөгдөл нууцлах, хамгаалах шинжлэх ухааныг криптограф нэрлэдэг.",
     },
     {
       move: "News_Lattice",
@@ -60,6 +69,14 @@ export default function News(): JSX.Element {
       title: "Нийтийн түлхүүрт криптографын хүндрэл, туршлага, ирээдүй",
       description:
         "Хэрэгжүүлэхэд тулгарч буй хүндрэл, ашиглах сайн тал болон ирээдүйн талаар",
+    },
+    {
+      move: "News_ZodiacCipher",
+      imgSrc: "/img/news/zodiac.PNG",
+      imgAlt: "zodiac_cipher",
+      title: "Алуурчин Зодиакийн шифр тайлагдав",
+      description:
+        "Алуурчны үлдээсэн шифрийг 51 жилийн турш хэн ч тайлж чадаагүй байсан.",
     },
     {
       move: "News_Quotes",
