@@ -1,35 +1,38 @@
 "use client";
-import React from "react";
-import Link from "next/link";
-import Image from "next/image";
 
-function Nav() {
-  const [isShow, setShow] = React.useState(false);
+import Link from "next/link";
+import { type FC, useState } from "react";
+import { Branding, MenuItem } from "./common";
+
+const MAIN_MENUS = [
+  {
+    url: "/cryptography",
+    label: "Криптограф",
+  },
+  {
+    url: "/analysis",
+    label: "Криптоанализ",
+  },
+  {
+    url: "/coding",
+    label: "Кодлол",
+  },
+  {
+    url: "/news",
+    label: "Мэдээ",
+  },
+] as const;
+
+const Nav: FC = () => {
+  const [isShow, setShow] = useState(false);
   const showHandle = () => setShow(!isShow);
 
-  // TODO: refactor re-usable component
-  // TODO: create MenuItem component
-  // TODO: add menus to constants
+  // TODO: move to footer. that is version-2.1 text
 
   return (
     <nav className="bg-white border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
-        <div className="flex items-center space-x-3 rtl:space-x-reverse">
-          <Link href="/" passHref className="cursor-pointer">
-            <h2 className="flex no-underline">
-              <Image
-                height="64"
-                width="64"
-                alt="logo"
-                className="h-12 w-12 mr-1 object-contain"
-                src="/icon.png"
-              />
-              <span className="self-center text-4xl font-primary font-bold tracking-tight pt-1">
-                Криптологи
-              </span>
-            </h2>
-          </Link>
-        </div>
+        <Branding />
         <button
           data-collapse-toggle="navbar-default"
           type="button"
@@ -60,46 +63,11 @@ function Nav() {
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-1 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
-            <li>
-              <div className="block py-2 px-3 md:p-0">
-                <Link href="/cryptography" passHref className="cursor-pointer">
-                  <span className="text-xl font-primary font-bold tracking-tight pt-1 ml-8">
-                    Криптограф
-                  </span>
-                </Link>
-              </div>
-            </li>
-            <li>
-              <div>
-                <Link
-                  href="/analysis"
-                  passHref
-                  className="block py-2 px-3 rounded hover:bg-gray-100 md:p-0"
-                >
-                  <span className="text-xl font-primary font-bold tracking-tight pt-1 ml-8">
-                    Криптоанализ
-                  </span>
-                </Link>
-              </div>
-            </li>
-            <li>
-              <div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                <Link href="/coding" passHref className="cursor-pointer">
-                  <span className="text-xl font-primary font-bold tracking-tight pt-1 ml-8">
-                    Кодлол
-                  </span>
-                </Link>
-              </div>
-            </li>
-            <li>
-              <div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
-                <Link href="/news" passHref className="cursor-pointer">
-                  <span className="text-xl font-primary font-bold tracking-tight pt-1 ml-8">
-                    Мэдээ
-                  </span>
-                </Link>
-              </div>
-            </li>
+            {MAIN_MENUS.map(({ url, label }, index) => (
+              <li key={index}>
+                <MenuItem url={url} label={label} />
+              </li>
+            ))}
             <li>
               <div className="block py-2 px-3 text-gray-900 rounded">
                 <Link href="#" passHref>
@@ -114,6 +82,6 @@ function Nav() {
       </div>
     </nav>
   );
-}
+};
 
 export default Nav;
