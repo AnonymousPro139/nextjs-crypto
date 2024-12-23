@@ -7,6 +7,10 @@ function Nav() {
   const [isShow, setShow] = React.useState(false);
   const showHandle = () => setShow(!isShow);
 
+  // TODO: refactor re-usable component
+  // TODO: create MenuItem component
+  // TODO: add menus to constants
+
   return (
     <nav className="bg-white border-gray-200">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
