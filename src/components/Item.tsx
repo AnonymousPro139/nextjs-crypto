@@ -15,7 +15,7 @@ function Item({ data }: { data: Data }): JSX.Element {
   return (
     <Link
       href={`/pages/${move}`}
-      className="h-120 w-72 rounded shadow-lg mx-auto border border-palette-lighters mb-16 overflow-hidden"
+      className="h-120 w-72 rounded-3xl shadow-lg mx-auto border border-palette-lighters mb-16 overflow-hidden"
       passHref
     >
       <div
@@ -27,14 +27,14 @@ function Item({ data }: { data: Data }): JSX.Element {
             fill={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="transform duration-500 ease-in-out hover:scale-110"
-            style={{borderRadius: 20}}
+            // style={{borderRadius: 20}}
           />
       </div>
       <div className="h-48 relative">
-        <div className="font-primary text-2xl pt-4 px-4 font-semibold" style={{color: "#485FC7"}}>
+        <div className="font-primary text-xl pt-4 px-4 font-semibold " style={{color: "#485FC7"}}>
           {title}
         </div>
-        <div className="text-md text-gray-600 p-4 font-primary font-light">
+        <div className="text-md text-gray-600 m-4 font-primary font-light text-justify">
           {description}
         </div>
       </div>

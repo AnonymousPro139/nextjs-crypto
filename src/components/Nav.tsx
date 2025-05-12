@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { type FC, useState } from "react";
-import { Branding, MenuItem } from "./common";
+import { Branding, MenuItem, TodayDate } from "./common";
 
 const MAIN_MENUS = [
   {
@@ -30,7 +30,7 @@ const Nav: FC = () => {
   // TODO: move to footer. that is version-2.1 text
 
   return (
-    <nav className="bg-white border-gray-200">
+    <nav className="bg-white border-gray-200 border-b">
       <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-2">
         <Branding />
         <button
@@ -62,22 +62,18 @@ const Nav: FC = () => {
           className={`${isShow ? "" : "hidden"} w-full md:block md:w-auto`}
           id="navbar-default"
         >
-          <ul className="font-medium flex flex-col p-1 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white">
+          <ul className="font-medium flex flex-col p-1 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white md:justify-around">
             {MAIN_MENUS.map(({ url, label }, index) => (
               <li key={index}>
                 <MenuItem url={url} label={label} />
               </li>
             ))}
-            <li>
-              <div className="block py-2 px-3 text-gray-900 rounded">
-                <Link href="#" passHref>
-                  <span className="text-xs text-gray-500 pt-1 ml-8">
-                    version-2.1
-                  </span>
-                </Link>
-              </div>
-            </li>
           </ul>
+        </div>
+      </div>
+      <div className="max-w-screen-xl mx-auto px-4 pb-2 flex justify-end">
+        <div className="text-xs text-gray-600">
+          <TodayDate />
         </div>
       </div>
     </nav>
