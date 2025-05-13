@@ -96,11 +96,21 @@ function Nav() {
                 </Link>
               </div>
             </li>
+
+            <li>
+              <div className="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0">
+                <Link href="/task" passHref className="cursor-pointer">
+                  <span className="text-xl font-primary font-bold tracking-tight pt-1 ml-8">
+                    Бодлого
+                  </span>
+                </Link>
+              </div>
+            </li>
             <li>
               <div className="block py-2 px-3 text-gray-900 rounded">
                 <Link href="#" passHref>
                   <span className="text-xs text-gray-500 pt-1 ml-8">
-                    version-2.1
+                    version-2.2
                   </span>
                 </Link>
               </div>
