@@ -14,7 +14,7 @@ function Footer() {
           className="font-semibold text-purple-700 hover:underline cursor-pointer">Cryptor</a>,
         <span className="ml-1">2023–2025</span>
       </p>
-      <p className="mt-1 text-xs text-black-400 ">version - 2.1.0</p>
+      <p className="mt-1 text-xs text-black-400 ">version - 2.1.1</p>
     </footer>
   );
 }

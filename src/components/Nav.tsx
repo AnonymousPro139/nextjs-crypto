@@ -1,8 +1,8 @@
 "use client";
 
-import Link from "next/link";
 import { type FC, useState } from "react";
 import { Branding, MenuItem, TodayDate } from "./common";
+import { usePathname } from 'next/navigation'
 
 const MAIN_MENUS = [
   {
@@ -26,6 +26,11 @@ const MAIN_MENUS = [
 const Nav: FC = () => {
   const [isShow, setShow] = useState(false);
   const showHandle = () => setShow(!isShow);
+  const pathName: string[] = [];
+
+  usePathname().slice(1).split("/").forEach((part) => {
+    pathName.push(...part.split("_"));
+  });
 
   // TODO: move to footer. that is version-2.1 text
 
@@ -63,11 +68,20 @@ const Nav: FC = () => {
           id="navbar-default"
         >
           <ul className="font-medium flex flex-col p-1 md:p-0 mt-4 border border-gray-100 rounded-lg bg-gray-100 md:flex-row md:space-x-8 rtl:space-x-reverse md:mt-0 md:border-0 md:bg-white md:justify-around">
-            {MAIN_MENUS.map(({ url, label }, index) => (
-              <li key={index}>
-                <MenuItem url={url} label={label} />
-              </li>
-            ))}
+            {MAIN_MENUS.map(({ url, label }, index) => {
+              const isActive = pathName.find((a) => {
+                  return url.toLowerCase().slice(1).startsWith(a.toLowerCase())
+              })
+              
+              return (
+                <li 
+                  key={index} 
+                  className={isActive ? "w-fit border-b-4 border-[#485fc7]" : ""}
+                >
+                  <MenuItem url={url} label={label} />
+                </li>
+              )
+            })}
           </ul>
         </div>
       </div>
