@@ -15,7 +15,7 @@ function Item({ data }: { data: Data }): JSX.Element {
   return (
     <Link
       href={`/pages/${move}`}
-      className="h-120 w-72 rounded-3xl shadow-lg mx-auto border border-palette-lighters mb-16 overflow-hidden"
+      className="h-120 w-72 rounded-3xl shadow-lg mx-auto border border-palette-lighters mb-10 overflow-hidden"
       passHref
     >
       <div

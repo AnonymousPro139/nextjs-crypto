@@ -4,7 +4,7 @@ import Link from "next/link";
 
 function Footer() {
   return (
-    <footer className="text-center py-6 text-sm text-gray-500">
+    <footer className="text-center pb-4 text-sm text-gray-500">
       <p className="flex justify-center items-center gap-1 text-gray-700 dark:text-black-300">
         Built with
         <span className="text-red-500 text-lg">❤️</span>
