@@ -32,6 +32,12 @@ const Nav: FC = () => {
     pathName.push(...part.split("_"));
   });
 
+  if(pathName.length === 0 || pathName.every(item => item === "")){
+    pathName.length = 0;
+    pathName.push(MAIN_MENUS[0].url.slice(1));
+  }
+    
+
   // TODO: move to footer. that is version-2.1 text
 
   return (
@@ -85,7 +91,13 @@ const Nav: FC = () => {
           </ul>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4 pb-2 flex justify-end">
+      <div className="max-w-screen-xl mx-auto px-4 pb-2 flex justify-between">
+        <div className="text-xs text-gray-600">
+          <div className="flex flex-col items-start py-2 px-3 rounded mx-2 ">
+            <span>Монгол улс,</span>
+            <span>Улаанбаатар хот</span>
+          </div>
+        </div>
         <div className="text-xs text-gray-600">
           <TodayDate />
         </div>
