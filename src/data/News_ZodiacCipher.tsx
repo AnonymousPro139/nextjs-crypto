@@ -140,7 +140,7 @@ function News() {
             className="flex justify-center items-center mt-1"
             style={{ color: "gray" }}
           >
-            2024.11.25
+            2025.04.03
           </p>
         </p>
       </div>
